@@ -1,0 +1,52 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-image: url(img/bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #464646;
+
+}
+
+#inputCity {
+	font-size: 30px;
+	border-radius: 20px;
+	border: 7px solid #e74c3c;
+}
+
+.container {
+	height: 100%;
+	display: table;
+	width: 100%;
+	padding: 0;
+}
+
+
+#button {
+}
+
+.btn {
+	font-size: 30px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+
+}
+.row {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.centering {
+	float: none;
+	margin: 0 auto;
+}
