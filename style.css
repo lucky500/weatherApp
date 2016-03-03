@@ -16,10 +16,26 @@ body {
 
 }
 
+.weatherWidget {
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 10px;
+}
+
 #inputCity {
 	font-size: 30px;
 	border-radius: 20px;
-	border: 7px solid #e74c3c;
+	border: 7px solid #d35400;
+	padding: 10px;
+}
+
+#inputCity:focus {
+	outline: 0;
 }
 
 .container {
@@ -39,6 +55,10 @@ body {
 	margin-bottom: 10px;
 
 }
+.btn:focus {
+	outline: 0;
+}
+
 .row {
 	height: 100%;
 	display: table-cell;

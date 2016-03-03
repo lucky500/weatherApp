@@ -5,6 +5,7 @@
 //city-name
 //temperature
 
+localStorage = [];
 
 $(document).ready(init);
 
@@ -32,6 +33,7 @@ function pullData_Render() {
 				var temp_max = jd.main.temp_max;
 				var temp = (temp_max + temp_min)/2;
 				temp = kelvin_to_celsius(temp);
+				temp = celsius_to_fahrenheit(temp);
 				temp = temp.toFixed(2);
 				var cityname = jd.name;
 				$("#city-name").html(cityname);
@@ -46,4 +48,10 @@ function pullData_Render() {
 
 function kelvin_to_celsius(fah){
 	return fah - 273.15;
+}
+
+function celsius_to_fahrenheit(cel){
+	var temp = 9/5 * cel;
+	temp = temp + 32;
+	return temp;
 }
